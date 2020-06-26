@@ -37,7 +37,7 @@ function xScale(censusData, chosenXAxis) {
         return xLinearScale;
 }
 
-d3.csv("assets/data/data.csv").then(function(data) {
+d3.csv("static/data/data.csv").then(function(data) {
     console.log(data);
     var yLinearScale = d3.scaleLinear()
         .domain(d3.extent(data))
